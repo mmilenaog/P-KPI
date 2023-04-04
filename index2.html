@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Favicon-KPI.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="nav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>KPI-MOG</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <a href="#" class="logo"><img src="./img/acciones.jpg" alt=""></a>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fa fa-bars"></label>
+            <nav class="navbar">
+                <a href="#Definicion">Definición</a>
+                <a href="#Clasificacion">Clasificación</a>
+                <a href="#Caracteristicas">Características</a>
+                <a href="#Diseño">Diseño</a>
+            </nav>
+        </div>
+        <div id="showcase">
+            <div class="container">
+                <h1 class="display-1">Key Performance Indicator</h1>
+                <img src="./img/images_1.png" alt=""><a href="#"></a>
+                <br>
+                <a class="btn btn-dark" href="#" onclick="toggleVideo();">Ver más</a>
+            </div>
+        </div>
+        <div>
+            <section class="trailer">
+                <video src="./img/KPIs en redes sociales_ qué son.mp4" controls="true"></video>
+                <img src="./img/close.png" class="close" onclick="toggleVideo();">
+            </section>
+        </div>
+    </header>
+    <section id="secciones">
+        <div class="container">
+            <h2>Indicador clave de rendimiento</h2>
+            <div class="secciones-row">
+                <div class="secciones-row-content">
+                    <h4 id="Definicion">Definición</h4>
+                    <p>Los KPI’s o Key Performance Indicators son los indicadores clave de rendimiento. Son las métricas
+                        esenciales para saber cómo han funcionado las distintas acciones implementadas de acuerdo al
+                        objetivo que se ha planteado en un principio y funcionan como una variable y casi todos los
+                        casos, se representan en números o porcentajes... </p>
+                    <a class="btn btn-outline"
+                        href="https://gc.scalahed.com/recursos/files/r161r/w24174w/S8_desarrollo_aplicacion_gestion.pdf">Ver
+                        más</a>
+                </div>
+                <div class="secciones-row-content">
+                    <h4 id="Clasificacion">Clasificación</h4>
+                    <p>Existen diversas formas de clasificar los indicadores de rendimiento y los más utilizados son los
+                        siguientes: Indicadores cualitativos o cuantitativos, KPIs Input, Output, de Proceso y
+                        Resultados y KPIs leading y lagging; sin embargo, cada negocio o proyecto requiere de unos
+                        indicadores KPI específico...
+                    </p>
+                    <a class="btn btn-outline"
+                        href="https://gestion.pensemos.com/hs-fs/hubfs/Blog-Pensemos-061218-1.png?width=1228&name=Blog-Pensemos-061218-1.png">Ver
+                        más</a>
+                </div>
+            </div>
+            <div class="secciones-row">
+                <div class="secciones-row-content">
+                    <h4 id="Caracteristicas">Características</h4>
+                    <p>Cada negocio y cada segmento demanda resultados diferentes y, en consecuencia, diferentes
+                        indicadores que los acompañen. Pero existen algunas características clave a la hora de definir
+                        los KPI de una empresa. La princiipal característica en que los KPIs deben ser SMART, es decór,
+                        inteligentes. Adicionalmente,, necesitan ser medible Debe ser relevante, necesitan ser
+                        verificable y deben mejorar la toma de decisiones...</p>
+                    <a class="btn btn-outline"
+                        href="https://imgv2-1-f.scribdassets.com/img/document/482940831/original/e2bd489275/1672852230?v=1">Ver
+                        más</a>
+                </div>
+                <div class="secciones-row-content">
+                    <h4 id="Diseño">Diseño</h4>
+                    <p>Antes de diseñar estos indicadores clave de rendimiento deberás hacerte estas preguntas: ¿Qué
+                        quieres medir?, ¿Por qué medimos este dato?, ¿En realidad realiza el seguimiento de los
+                        resultados de uno de nuestros objetivos?, ¿Es importante para tu empresa?, ¿Quién será el
+                        encargado de supervisarlo y ¿Cada cuánto debe ser supervisado?... </p>
+                    <a class="btn btn-outline"
+                        href="https://bscdesigner.com/es/wp-content/uploads/2019/07/plantilla-de-kpi.png">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="list-group-item" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="list-group-item" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="list-group-item" href="#"><i class="fab fa-youtube-square"></i></a>
+                </div>
+                <div class="text">
+                    <h4>&copy; created by MOG Web Designer all right reserved</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleVideo() {
+            const trailer = document.querySelector(".trailer");
+            const video = document.querySelector("video");
+            trailer.classList.toggle("active");
+            video.currentTime = 0;
+            video.pause();
+        } 
+    </script>
+</body>
+
+</html>

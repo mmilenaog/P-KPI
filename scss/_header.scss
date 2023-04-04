@@ -1,0 +1,78 @@
+#header {
+    position: fixed;
+    border: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    .logo {
+        img {
+            padding: 5px;
+            height: 70px;
+        }
+    }
+    .navbar {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        a {
+            color: $color2;
+            font-weight: 700;
+            margin-left: 2rem;
+            &:hover {
+                color: $color3;
+            }
+        }
+    }
+    input {
+        display: none;
+    }
+    label {
+        font-size: larger;
+        color: $color2;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 730px) {
+    header {
+        #header {
+            label {
+                visibility: visible;
+                opacity: 1;
+            }
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 0;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+                background-color: whitesmoke;
+                transform-origin: top;
+                transform: scaleY(0);
+                opacity: 0;
+                a {
+                    color: $color1;
+                    display: block;
+                    margin: 2px;
+                    font-size: 1rem;
+                }
+            }
+            input:checked ~ .navbar {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            input:checked ~ label::before {
+                content: "\f00d";
+            }
+        }
+    }
+}
